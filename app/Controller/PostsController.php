@@ -32,6 +32,63 @@ class PostsController extends AppController {
      } 
  
      public function index() {
+//         // パスが通っていなければ設定
+//         $path = '/var/www/html/02_cakephp/app/Vendor/google-api-php-client/src';
+//         set_include_path(get_include_path() . PATH_SEPARATOR . $path);
+//
+//         App::import('Vendor', 'Google_Client', array('file' => 'google-api-php-client/src/Google/Client.php'));
+//         App::import('Vendor', 'Google_Service_Analytics', array('file' => 'google-api-php-client/src/Google/Service/Analytics.php'));
+//
+//         // Google Developers Consoleで作成されたクライアントID
+//         define('CLIENT_ID', '344899612518-r17hk6tj1eddcd1jairbejjr0qtfpbtv.apps.googleusercontent.com');
+//         // Google Developers Consoleで作成されたクライアントシークレット
+//         define('CLIENT_SECRET', 'K0W69_DPHtPRYlXPBq4nUndb');
+//         // Google Developers Consoleで作成されたリダイレクトURI
+//         define('REDIRECT_URI', 'http://' . $_SERVER['HTTP_HOST'] . '/analytics');
+//
+//         $client = new Google_Client();
+//         $client->setClientId(CLIENT_ID);
+//         $client->setClientSecret(CLIENT_SECRET);
+//         $client->setRedirectUri(REDIRECT_URI);
+//         $client->addScope('https://www.googleapis.com/auth/analytics.readonly');
+//
+//         $analytics = new Google_Service_Analytics($client);
+//
+//         // 認証後codeを受け取ったらセッション保存
+//         if (isset($this->request->query['code'])) {
+//             $client->authenticate($this->request->query['code']);
+//             $this->Session->write('token', $client->getAccessToken());
+//             $this->redirect('http://' . $_SERVER['HTTP_HOST'] . '/analytics');
+//         }
+//
+//         if ($this->Session->check('token')) {
+//             $client->setAccessToken($this->Session->read('token'));
+//         }
+//          
+//         if ($client->getAccessToken()) {
+//             $start_date = date('Y-m-d', strtotime('- 10 day'));
+//             $end_date = date('Y-m-d');
+//             // GoogleAnalyticsの「アナリティクス設定」>「ビュー」>「ビュー設定」の「ビューID」
+//             $view = '100810855';
+//
+//             // データ取得
+//             $data = array();
+//             $dimensions = 'ga:date';
+//             $metrics = 'ga:visits';
+//             $sort = 'ga:date';
+//             $optParams = array('dimensions' => $dimensions, 'sort' => $sort);
+//             $results = $analytics->data_ga->get('ga:' . $view, $start_date, $end_date, $metrics, $optParams);
+//             if (isset($results['rows']) && !empty($results['rows'])) {
+//                 $data['Sample']['date'] = $results['rows'][0][0];
+//                 $data['Sample']['visits'] = $results['rows'][0][1];
+//             }
+//
+//             pr($data);         
+//         } else {
+//             $auth_url = $client->createAuthUrl();
+//             echo '<a href="'.$auth_url.'">認証</a>';
+//         }
+
          $this->Prg->commonProcess();
          if (isset($this->passedArgs['search_word'])) {
              $conditions = $this->Post->parseCriteria($this->passedArgs);

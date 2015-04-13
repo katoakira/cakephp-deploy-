@@ -3059,3 +3059,33 @@ Stack Trace:
 =======
 >>>>>>> f8de2056cae61e6e021e24c7c68857f4fc639c2c
 >>>>>>> origin/master
+2015-04-13 22:03:44 Error: Fatal Error (1): Class 'Google_Service' not found in [/var/www/html/02_cakephp/app/Vendor/google-api-php-client/src/Google/Service/Analytics.php, line 32]
+2015-04-13 22:03:44 Error: [FatalErrorException] Class 'Google_Service' not found
+Request URL: /02_cakephp/
+Stack Trace:
+#0 /var/www/html/02_cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'Google_S...', '/var/www/html/0...', 32)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Google_S...', '/var/www/html/0...', 32, Array)
+#2 /var/www/html/02_cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'Google_S...', '/var/www/html/0...', 32, Array)
+#3 /var/www/html/02_cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-13 22:08:59 Error: Fatal Error (1): Class 'Google_Service' not found in [/var/www/html/02_cakephp/app/Vendor/google-api-php-client/src/Google/Service/Analytics.php, line 32]
+2015-04-13 22:08:59 Error: [FatalErrorException] Class 'Google_Service' not found
+Request URL: /02_cakephp/
+Stack Trace:
+#0 /var/www/html/02_cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'Google_S...', '/var/www/html/0...', 32)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Google_S...', '/var/www/html/0...', 32, Array)
+#2 /var/www/html/02_cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'Google_S...', '/var/www/html/0...', 32, Array)
+#3 /var/www/html/02_cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-13 22:09:02 Error: Fatal Error (1): Class 'Google_Service' not found in [/var/www/html/02_cakephp/app/Vendor/google-api-php-client/src/Google/Service/Analytics.php, line 32]
+2015-04-13 22:09:02 Error: [FatalErrorException] Class 'Google_Service' not found
+Request URL: /02_cakephp/
+Stack Trace:
+#0 /var/www/html/02_cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'Google_S...', '/var/www/html/0...', 32)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Google_S...', '/var/www/html/0...', 32, Array)
+#2 /var/www/html/02_cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'Google_S...', '/var/www/html/0...', 32, Array)
+#3 /var/www/html/02_cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
